@@ -9,7 +9,7 @@ import './nav.css';
 
 const Nav = () => {
 
-  const { loginWithRedirect, logout } = useAuth0();
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
   return (
     <>
@@ -30,6 +30,19 @@ const Nav = () => {
             <input type='text' placeholder='search'></input>
             <button><AiOutlineSearch /></button>
           </div>
+          {
+            isAuthenticated ?
+            // Logout button
+            <div className='user'>
+             <div className='icon'>
+               <CiLogout />
+             </div>
+             <div className='btn'>
+               <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button>
+             </div>
+           </div>
+          :
+          //Login button
           <div className='user'>
             <div className='icon'>
               <FiLogIn />
@@ -37,15 +50,8 @@ const Nav = () => {
             <div className='btn'>
               <button onClick={() => loginWithRedirect()}>Login</button>
             </div>
-          </div>
-          <div className='user'>
-            <div className='icon'>
-              <CiLogout />
-            </div>
-            <div className='btn'>
-              <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button>
-            </div>
-          </div>
+        </div>
+          }
         </div>
       </div>
     </>
