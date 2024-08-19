@@ -2,13 +2,14 @@ import React from 'react';
 import { MdLocalShipping } from "react-icons/md";
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiLogIn } from 'react-icons/fi';
-import { useAuth0 } from "@auth0/auth0-react"; // Ovo treba da bude na vrhu
+import { CiLogout } from 'react-icons/ci';
+import { useAuth0 } from "@auth0/auth0-react"; 
 
 import './nav.css';
 
 const Nav = () => {
-  // `useAuth0` mora biti pozvan unutar funkcionalne komponente
-  const { loginWithRedirect } = useAuth0();
+
+  const { loginWithRedirect, logout } = useAuth0();
 
   return (
     <>
@@ -35,6 +36,14 @@ const Nav = () => {
             </div>
             <div className='btn'>
               <button onClick={() => loginWithRedirect()}>Login</button>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='icon'>
+              <CiLogout />
+            </div>
+            <div className='btn'>
+              <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button>
             </div>
           </div>
         </div>
