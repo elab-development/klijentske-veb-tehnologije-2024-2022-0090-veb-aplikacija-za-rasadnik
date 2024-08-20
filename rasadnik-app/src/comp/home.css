@@ -101,3 +101,30 @@
 {
     color: green;
 }
+.home .trending .container .left_box .products
+{
+    max-width: 100%;
+}
+.home .trending .container .left_box .products .container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home .trending .container .left_box .products .container .box 
+{
+    width: 195px;
+    height: 295px;
+    padding: 10px 10px;
+    border: 4px solid #f6f7f8;
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.home .trending .container .left_box .products .container .box .img_box img
+{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+}
