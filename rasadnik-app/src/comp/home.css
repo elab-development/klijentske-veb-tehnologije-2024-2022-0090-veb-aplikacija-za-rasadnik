@@ -53,4 +53,51 @@
     color: green;
     background: lightgreen;
 }
-
+.home .trending
+{
+    padding: 20px 30px;
+    width: 100%;
+}
+.home .trending .containter
+{
+    max-width: 100%;
+    display: flex;
+}
+.home .trending .container .left_box
+{
+    padding: 10px 20px;
+    width: 75%;
+}
+.home .trending .container .left_box .header
+{
+    display: flex;
+    max-width: 100%;
+    padding: 10px 10px;
+    background: #f6f7f8;
+    justify-content: space-between;
+}
+.home .trending .container .left_box .header .heading h2
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+}
+.home .trending .container .left_box .header .cate
+{
+    display: flex;
+    margin-top: 5px;
+}
+.home .trending .container .left_box .header .cate h3
+{
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.home .trending .container .left_box .header .cate h3:hover
+{
+    color: green;
+}

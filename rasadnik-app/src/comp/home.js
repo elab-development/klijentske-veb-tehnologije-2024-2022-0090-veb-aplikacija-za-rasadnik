@@ -12,12 +12,12 @@ const Home = () => {
                 <Link to='/shop' className='link'>Shop now</Link>
             </div>
         </div>   
-        <div className='tranding'>
+        <div className='trending'>
             <div className='container'>
                 <div className='left_box'>
                     <div className='header'>
                         <div className='heading'>
-                            <h2>trending product</h2>
+                            <h2>Trending product</h2>
                         </div>
                         <div className='cate'>
                             <h3>New</h3>
@@ -26,7 +26,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='right_box'></div>
+                <div className='right_box'>
+                </div>
             </div>
         </div>     
     </div>
