@@ -82,6 +82,7 @@
     font-size: 16px;
     color: black;
     margin-top: 5px;
+    cursor: pointer;
 }
 .home .trending .container .left_box .header .cate
 {
@@ -115,16 +116,158 @@
 {
     width: 195px;
     height: 295px;
-    padding: 10px 10px;
+   /* padding: 10px 10px;*/
     border: 4px solid #f6f7f8;
     margin-top: 20px;
     margin-left: 20px;
     overflow: hidden;
     border-radius: 5px;
 }
+
+.home .trending .container .left_box .products .container .box .img_box
+{
+    display: flex;
+}
+
 .home .trending .container .left_box .products .container .box .img_box img
 {
     width: 190px;
     height: 190px;
     object-fit: cover;
+}
+.home .trending .container .left_box .products .container .box .img_box .icon
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 10px;
+    transform: 0.5s;
+
+}
+.home .trending .container .left_box .products .container .box:hover .img_box .icon
+{
+
+    margin-left: -32%;
+}
+.home .trending .container .left_box .products .container .box .img_box .icon .icon_box
+{
+    padding: 10px 10px;
+    margin-top: 10px;
+    box-shadow: rgb(216, 216, 214) 0px 3px 8px;
+    z-index: 1;
+    background: rgb(245, 243, 243);
+    color: rgb(29, 19, 14);
+    cursor: pointer;
+}
+.home .trending .container .left_box .products .container .box .img_box .icon .icon_box:hover
+{
+    color: #fff;
+    background: #bd4a10;
+
+}
+.home .trending .container .left_box .products .container .box .info
+{
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+.home .trending .container .left_box .products .container .box .info h3
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+.home .trending .container .left_box .products .container .box .info p
+{
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.home .trending .container .left_box .products .container .box .info .btn
+{
+
+    margin-top: 10px;
+    align-items: center;
+    padding: 5px 20px;
+    margin-left: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    background: rgb(62, 80, 62);
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.home .trending .container .left_box .products .container .box .info .btn:hover
+{
+    background: #bd4a10;
+    color: white;
+}
+.home .trending .container .right_box
+{
+    padding: 10px 20px;
+    width: 24%;
+}
+.home .trending .container .right_box .container
+{
+    max-width: 100%;
+}
+.home .trending .container .right_box .container .testmonial
+{
+    width: 100%;
+    border: 4px solid white;
+}
+.home .trending .container .right_box .container .testmonial .head
+{
+    padding: 10px 10px;
+    width: 100%;
+    background: white;
+}
+.home .trending .container .right_box .container .testmonial .head h3{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.home .trending .container .right_box .container .testmonial .detail
+{
+    padding: 10px 20px;
+}
+.home .trending .container .right_box .container .testmonial .detail .img_box
+{
+    margin-left: 50px;
+}
+.home .trending .container .right_box .container .testmonial .detail .info
+{
+    margin-top: 10px;
+}
+.home .trending .container .right_box .container .testmonial .detail .info h3
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+}
+.home .trending .container .right_box .container .testmonial .detail .info h4
+{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(7, 62, 7);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.home .trending .container .right_box .container .testmonial .detail .info p
+{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
 }
