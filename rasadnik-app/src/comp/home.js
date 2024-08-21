@@ -1,9 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './home.css'
 import { createRoutesFromElements, Link } from 'react-router-dom'
 import Homeproduct from './home_product'
 import { FaEye, FaHeart } from "react-icons/fa";
+import { LuFacebook } from "react-icons/lu";
+import { FaInstagram } from "react-icons/fa";
+import { PiTiktokLogo } from "react-icons/pi";
+import { AiOutlineYoutube } from "react-icons/ai";
+
 const Home = () => {
+    //product category
+    const[newProduct, setNewProduct]=useState('')
+    //tranding product
     const [trendingProduct, setTrendingproduct] = useState(Homeproduct)
   //filter of trending products
     const filtercate=(x)=>
@@ -20,6 +28,23 @@ const Home = () => {
     {
         setTrendingproduct(Homeproduct)
     }
+
+
+    //Product type
+    useEffect(()=>
+    {
+        productcategory()
+    
+    })
+    const productcategory=()=>
+    {
+        const newcategory=Homeproduct.filter((x)=>
+        {
+            return x.type==='new'
+        })
+        setNewProduct(newcategory)
+    }
+
     return (
     <>
     <div className='home'>
@@ -72,10 +97,11 @@ const Home = () => {
                                 })
                             }
                         </div>
+                        <button>Show More</button>
                     </div>
                 </div>
                 <div className='right_box'>
-                    <div className='container'>
+                    <div className='right_container'>
                         <div className='testmonial'>
                             <div className='head'>
                                 <h3>Our testmonial</h3>
@@ -91,10 +117,79 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='newsletter'>
+                            <div className='head'>
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div className='form'>
+                                <input type='email' placeholder='E-mail' autoComplete='off'></input>
+                                <button>Subscribe</button>
+                                <div className='icon_box'>
+                                    <div className='icon'>
+                                        <LuFacebook />
+                                    </div>
+                                    <div className='icon'>
+                                        <FaInstagram />
+                                    </div>
+                                    <div className='icon'>
+                                        <PiTiktokLogo />
+                                    </div>
+                                    <div className='icon'>
+                                        <AiOutlineYoutube />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>     
+        </div>  
+        <div className='banners'>
+            <div className='container'>
+                <div className='left_box'>
+                    <div className='box'>
+                        <img src='images/img10.webp' alt='banner'></img>
+                    </div>
+                    <div className='box'>
+                        <img src='images/img11.webp' alt='banner'></img>
+                    </div>
+                </div>
+                <div className='right_box'>
+                    <div className='top'>
+                        <img src='images/img12.webp' alt=''></img>
+                        <img src='images/img13.webp' alt=''></img>
+                    </div>
+                    <div className='bottom'>
+                        <img src='images/img9.webp' alt=''></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <div className='product_type'>
+                <div className='container'>
+                    <div className='box'>
+                        <div className='header'>
+                            <h2>New Product</h2>
+                        </div>
+                        {
+                            newProduct.map((curElm)=>
+                                {
+                                    return(
+                                        <>
+                                        <div className='productbox'>
+                                            <div className='img-box'>
+                                                <img src={curElm.images} alt=''></img>
+                                            </div>
+
+                                        </div>
+                                        </>
+                                    )
+                                }
+                            )
+                        }
+                    </div>
+                </div>
+           </div>
     </div>
     </>
   )
