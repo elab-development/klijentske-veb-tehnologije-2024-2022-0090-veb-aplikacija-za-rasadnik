@@ -6,11 +6,13 @@ import { FaEye, FaHeart } from "react-icons/fa";
 import { LuFacebook } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { PiTiktokLogo } from "react-icons/pi";
-import { AiOutlineYoutube } from "react-icons/ai";
+import { AiFillEye, AiFillHeart, AiOutlineYoutube,AiOutlineShoppingCart } from "react-icons/ai";
 
 const Home = () => {
     //product category
-    const[newProduct, setNewProduct]=useState('')
+    const[newProduct, setNewProduct]=useState([])
+    const[featuredProduct, setFeaturedProduct]=useState([])
+    const[topProduct, setTopProduct]=useState([])
     //tranding product
     const [trendingProduct, setTrendingproduct] = useState(Homeproduct)
   //filter of trending products
@@ -38,11 +40,26 @@ const Home = () => {
     })
     const productcategory=()=>
     {
+        //New Product
         const newcategory=Homeproduct.filter((x)=>
         {
             return x.type==='new'
         })
         setNewProduct(newcategory)
+
+        //Featured Product
+        const featuredcategory = Homeproduct.filter((x)=>
+        {
+            return x.type === 'featured'
+        })
+        setFeaturedProduct(featuredcategory)
+
+        //Top product
+        const topcategory=Homeproduct.filter((x)=>
+        {
+            return x.type === 'top'
+        })
+        setTopProduct(topcategory)
     }
 
     return (
@@ -180,7 +197,73 @@ const Home = () => {
                                             <div className='img-box'>
                                                 <img src={curElm.images} alt=''></img>
                                             </div>
-
+                                            <div className='detail'>
+                                                <h3>{curElm.Name}</h3>
+                                                <p>$ {curElm.price}</p>
+                                                <div className='icon'>
+                                                    <button><AiFillEye/></button>
+                                                    <button><AiFillHeart/></button>
+                                                    <button><AiOutlineShoppingCart /></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </>
+                                    )
+                                }
+                            )
+                        }
+                    </div>
+                    <div className='box'>
+                        <div className='header'>
+                            <h2>Featured Product</h2>
+                        </div>
+                        {
+                            featuredProduct.map((curElm)=>
+                                {
+                                    return(
+                                        <>
+                                        <div className='productbox'>
+                                            <div className='img-box'>
+                                                <img src={curElm.images} alt=''></img>
+                                            </div>
+                                            <div className='detail'>
+                                                <h3>{curElm.Name}</h3>
+                                                <p>$ {curElm.price}</p>
+                                                <div className='icon'>
+                                                    <button><AiFillEye/></button>
+                                                    <button><AiFillHeart/></button>
+                                                    <button><AiOutlineShoppingCart /></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </>
+                                    )
+                                }
+                            )
+                        }
+                    </div>
+                    <div className='box'>
+                        <div className='header'>
+                            <h2>Top Product</h2>
+                        </div>
+                        {
+                            topProduct.map((curElm)=>
+                                {
+                                    return(
+                                        <>
+                                        <div className='productbox'>
+                                            <div className='img-box'>
+                                                <img src={curElm.images} alt=''></img>
+                                            </div>
+                                            <div className='detail'>
+                                                <h3>{curElm.Name}</h3>
+                                                <p>$ {curElm.price}</p>
+                                                <div className='icon'>
+                                                    <button><AiFillEye/></button>
+                                                    <button><AiFillHeart/></button>
+                                                    <button><AiOutlineShoppingCart /></button>
+                                                </div>
+                                            </div>
                                         </div>
                                         </>
                                     )

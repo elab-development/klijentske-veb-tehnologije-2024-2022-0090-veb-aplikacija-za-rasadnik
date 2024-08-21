@@ -63,6 +63,46 @@ const Homeproduct =
         images: 'images/img8.webp',
         cat: '',
         type: 'top',
+    },
+    {
+        id: 9,
+        Name: 'Zamia S30',
+        price: '15.000 RSD',
+        images: 'images/img9.webp',
+        cat: '',
+        type: 'top',
+    },
+    {
+        id: 10,
+        Name: 'Zamia S30',
+        price: '15.000 RSD',
+        images: 'images/img10.webp',
+        cat: '',
+        type: 'featured',
+    },
+    {
+        id: 11,
+        Name: 'Zamia S30',
+        price: '15.000 RSD',
+        images: 'images/img11.webp',
+        cat: '',
+        type: 'top',
+    },
+    {
+        id: 12,
+        Name: 'Zamia S30',
+        price: '15.000 RSD',
+        images: 'images/img12.webp',
+        cat: '',
+        type: 'featured',
+    },
+    {
+        id: 13,
+        Name: 'Zamia S30',
+        price: '15.000 RSD',
+        images: 'images/img13.webp',
+        cat: '',
+        type: 'top',
     }
 ]
 export default Homeproduct
