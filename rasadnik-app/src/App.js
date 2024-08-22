@@ -4,6 +4,7 @@ import {BrowserRouter} from 'react-router-dom'
 import Rout from './comp/rout'
 import Footer from './comp/footer'
 import Homeproduct from './comp/home_product'
+import Home from './comp/home'
 
 const App = () => {
 //shop page product
@@ -21,14 +22,28 @@ const App = () => {
   {
     setShop(Homeproduct)
   }
+  //Shop Search Filter
+  const searchlenght = (search || []).length === 0
   const searchproduct = () =>
   {
-    const searchfilter = Homeproduct.filter((x) =>
-    {
-      return x.cat === search
-    })
-    setShop(searchfilter)
+  if(searchlenght)
+  {
+    alert("Please Search Something!")
+    setShop(Homeproduct)
   }
+  else
+  {
+ 
+      
+        const searchfilter = Homeproduct.filter((x) =>
+        {
+          return x.cat === search
+        })
+        setShop(searchfilter)
+      
+  }
+}
+
   return (
     <>
       <BrowserRouter>
