@@ -8,6 +8,7 @@ import Homeproduct from './comp/home_product'
 const App = () => {
 //shop page product
   const[shop,setShop]=useState(Homeproduct)
+  const[search, setSearch] = useState('')
   const Filter = (x) =>
   {
     const cateFilter = Homeproduct.filter ((product) =>
@@ -20,10 +21,18 @@ const App = () => {
   {
     setShop(Homeproduct)
   }
+  const searchproduct = () =>
+  {
+    const searchfilter = Homeproduct.filter((x) =>
+    {
+      return x.cat === search
+    })
+    setShop(searchfilter)
+  }
   return (
     <>
       <BrowserRouter>
-      <Nav />
+      <Nav search={search} setSearch={setSearch} searchproduct={searchproduct}/>
       <Rout shop={shop} Filter={Filter} allcatefilter={allcatefilter}/>
       <Footer />
       </BrowserRouter>

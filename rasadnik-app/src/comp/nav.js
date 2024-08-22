@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 import './nav.css';
 
-const Nav = () => {
+const Nav = ({search, setSearch, searchproduct}) => {
 
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
@@ -28,8 +28,8 @@ const Nav = () => {
             <img src='image/image.logo.webp' alt='logo'></img>
           </div>
           <div className='search_box'>
-            <input type='text' placeholder='search'></input>
-            <button><AiOutlineSearch /></button>
+            <input type='text' value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)}></input>
+            <button onClick={searchproduct}><AiOutlineSearch /></button>
           </div>
           {
             isAuthenticated ?
