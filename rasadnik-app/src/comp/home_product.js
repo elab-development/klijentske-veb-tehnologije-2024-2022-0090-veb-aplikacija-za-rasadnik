@@ -5,7 +5,7 @@ const Homeproduct =
         Name: 'Kaktus Grusoni S1',
         price: '10.000 RSD',
         images: 'images/img1.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'new',
     },
     {
@@ -13,7 +13,7 @@ const Homeproduct =
         Name: 'Kaktus S2',
         price: '3.300 RSD',
         images: 'images/img2.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'new',
     },
     {
@@ -21,7 +21,7 @@ const Homeproduct =
         Name: 'Pahira S9',
         price: '1.300 RSD',
         images: 'images/img3.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'new',
     },
     {
@@ -29,7 +29,7 @@ const Homeproduct =
         Name: 'Pahira S10',
         price: '8.500 RSD',
         images: 'images/img4.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'new',
     },
     {
@@ -37,7 +37,7 @@ const Homeproduct =
         Name: 'Palma Howea S8',
         price: '5.500 RSD',
         images: 'images/img5.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     },
     {
@@ -45,7 +45,7 @@ const Homeproduct =
         Name: 'Palma Šamadora S7',
         price: '800 RSD',
         images: 'images/img6.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     },
     {
@@ -53,7 +53,7 @@ const Homeproduct =
         Name: 'Šeflera S22',
         price: '1.500 RSD',
         images: 'images/img7.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     },
     {
@@ -61,7 +61,7 @@ const Homeproduct =
         Name: 'Zamia S30',
         price: '15.000 RSD',
         images: 'images/img8.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     },
     {
@@ -69,7 +69,7 @@ const Homeproduct =
         Name: 'Zamia S30',
         price: '15.000 RSD',
         images: 'images/img9.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     },
     {
@@ -77,7 +77,7 @@ const Homeproduct =
         Name: 'Zamia S30',
         price: '15.000 RSD',
         images: 'images/img10.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'featured',
     },
     {
@@ -85,7 +85,7 @@ const Homeproduct =
         Name: 'Zamia S30',
         price: '15.000 RSD',
         images: 'images/img11.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     },
     {
@@ -93,7 +93,7 @@ const Homeproduct =
         Name: 'Zamia S30',
         price: '15.000 RSD',
         images: 'images/img12.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'featured',
     },
     {
@@ -101,7 +101,7 @@ const Homeproduct =
         Name: 'Zamia S30',
         price: '15.000 RSD',
         images: 'images/img13.webp',
-        cat: '',
+        cat: 'Saksijsko cvece',
         type: 'top',
     }
 ]

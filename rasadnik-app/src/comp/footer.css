@@ -32,7 +32,7 @@
 .footer .container .left-box .box .icon_box
 {
     font-size: 22px;
-    color: #cd1ecd;
+    color: rgb(221, 79, 2);
 }
 .footer .container .left-box .box .detail
 {
@@ -42,14 +42,14 @@
 {
     text-transform: uppercase;
     font-size: 16px;
-    color: #cd1ecd;
+    color: rgb(3, 40, 13);
     font-weight: 600;
     letter-spacing: 1px;
 }
 .footer .container .left-box .box .detail p
 {
     font-size: 14px;
-    color: #232323;
+    color: rgb(8, 8, 8);
 }
 .footer .container .right_box
 {
@@ -110,5 +110,5 @@
 }
 .footer .container .right_box .bottom .box ul li:hover
 {
-    color: #cd1e76;
+    color: rgb(5, 95, 5);
 }
