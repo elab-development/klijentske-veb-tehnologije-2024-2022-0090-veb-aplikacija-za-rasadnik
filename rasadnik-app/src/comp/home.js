@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import { PiTiktokLogo } from "react-icons/pi";
 import { AiFillEye, AiFillHeart, AiOutlineYoutube,AiOutlineShoppingCart } from "react-icons/ai";
 
-const Home = () => {
+const Home = ({addtocart}) => {
     //product category
     const[newProduct, setNewProduct]=useState([])
     const[featuredProduct, setFeaturedProduct]=useState([])
@@ -106,7 +106,7 @@ const Home = () => {
                                             <div className='info'>
                                                 <h3>{curElm.Name}</h3>
                                                 <p>{curElm.price}</p>
-                                                <button className='btn'>Add To Cart</button>
+                                                <button className='btn' onClick={() => addtocart (curElm)}>Add To Cart</button>
                                             </div>
                                         </div>
                                         </>
@@ -203,7 +203,7 @@ const Home = () => {
                                                 <div className='icon'>
                                                     <button><AiFillEye/></button>
                                                     <button><AiFillHeart/></button>
-                                                    <button><AiOutlineShoppingCart /></button>
+                                                    <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -232,7 +232,7 @@ const Home = () => {
                                                 <div className='icon'>
                                                     <button><AiFillEye/></button>
                                                     <button><AiFillHeart/></button>
-                                                    <button><AiOutlineShoppingCart /></button>
+                                                    <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -261,7 +261,7 @@ const Home = () => {
                                                 <div className='icon'>
                                                     <button><AiFillEye/></button>
                                                     <button><AiFillHeart/></button>
-                                                    <button><AiOutlineShoppingCart /></button>
+                                                    <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                                                 </div>
                                             </div>
                                         </div>

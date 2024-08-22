@@ -5,7 +5,7 @@ import { MdCrueltyFree } from 'react-icons/md'
 import { FiFilter } from 'react-icons/fi';
 
 
-const Shop = ({shop, Filter, allcatefilter}) => {
+const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
   return (
     <>
     <div className='shop'>
@@ -61,7 +61,7 @@ const Shop = ({shop, Filter, allcatefilter}) => {
                                     <div className='detail'>
                                         <h3>{curElm.Name}</h3>
                                         <p>{curElm.price}</p>
-                                        <button>Add to cart</button>
+                                        <button onClick={() => addtocart (curElm)}>Add to cart</button>
                                     </div>
                                 </div>
                                 </>
