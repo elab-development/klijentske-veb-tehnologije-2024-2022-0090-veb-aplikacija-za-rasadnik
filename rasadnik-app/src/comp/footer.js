@@ -48,7 +48,7 @@ const Footer = () => {
             <div className='right_box'>
                 <div className='header'>
                     <img src='image/image.logo.webp' alt=''></img>
-                    <p>Lorem ipsum dolor sit amet, consectetur Nuliscing elit. Duis faucibus ipsum id sem Putconsequat Text.</p>
+                    <p>If you want to receive any notification, please contact us.</p>
                 </div>
                 <div className='bottom'>
                     <div className='box'>

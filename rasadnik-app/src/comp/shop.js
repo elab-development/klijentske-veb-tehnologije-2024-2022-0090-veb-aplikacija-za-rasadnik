@@ -1,9 +1,11 @@
 import React from 'react'
 import './shop.css'
+import { AiFillHeart, AiFillEye } from 'react-icons/ai';
 import { MdCrueltyFree } from 'react-icons/md'
+import { FiFilter } from 'react-icons/fi';
 
 
-const Shop = ({shop}) => {
+const Shop = ({shop, Filter, allcatefilter}) => {
   return (
     <>
     <div className='shop'>
@@ -17,12 +19,13 @@ const Shop = ({shop}) => {
                 </div>
                 <div className='box'>
                     <ul>
-                        <li># Saksijsko cvece</li>
-                        <li># Zive ograde</li>
-                        <li># Ruze</li>
-                        <li># Drvece</li>
-                        <li># Cuvarkuce</li>
-                        <li># Cetinari</li>
+                        <li onClick={() => allcatefilter ()}># All</li>
+                        <li onClick={() => Filter ("Saksijsko cveće")}># Saksijsko cveće</li>
+                        <li onClick={() => Filter ("Žive ograde")}># Žive ograde</li>
+                        <li onClick={() => Filter ("Ruže")}># Ruže</li>
+                        <li onClick={() => Filter ("Drveće")}># Drveće</li>
+                        <li onClick={() => Filter ("Čuvarkuće")}># Čuvarkuće</li>
+                        <li onClick={() => Filter ("Četinari")}># Četinari</li>
                     </ul>
                 </div>
 
@@ -50,6 +53,15 @@ const Shop = ({shop}) => {
                                 <div className='box'>
                                     <div className='img_box'>
                                         <img src={curElm.images} alt=''></img>
+                                        <div className='icon'>
+                                           <li><AiFillHeart /></li> 
+                                           <li><AiFillEye /></li>
+                                        </div>
+                                    </div>
+                                    <div className='detail'>
+                                        <h3>{curElm.Name}</h3>
+                                        <p>{curElm.price}</p>
+                                        <button>Add to cart</button>
                                     </div>
                                 </div>
                                 </>
