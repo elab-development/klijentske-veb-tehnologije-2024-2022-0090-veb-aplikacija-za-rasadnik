@@ -39,6 +39,7 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
                     <h4># {detail.cat}</h4>
                     <h2>{detail.Name}</h2>
                     <p>NEKI TEKST</p>
+                    <h3>{detail.price} RSD</h3>
                     <button onClick={() => addtocart (detail)}>Add To Cart</button>
                 </div>
             </div>

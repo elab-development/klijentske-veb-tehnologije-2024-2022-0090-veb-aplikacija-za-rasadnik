@@ -272,3 +272,31 @@
     font-size: 22px;
     font-weight: 600;
 }
+.product_detail .container .info p
+{
+    margin-top: 10px;
+    color: #8a8a8a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.product_detail .container .info h3
+{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #101010;
+}
+.product_detail .container .info button
+{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    background: #db7108;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
