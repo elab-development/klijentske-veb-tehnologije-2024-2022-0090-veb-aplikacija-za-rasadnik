@@ -4,7 +4,7 @@ import {BrowserRouter} from 'react-router-dom'
 import Rout from './comp/rout'
 import Footer from './comp/footer'
 import Homeproduct from './comp/home_product'
-import Home from './comp/home'
+//import Home from './comp/home'
 
 const App = () => {
   //Add to cart
