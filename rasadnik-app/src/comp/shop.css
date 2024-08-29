@@ -152,7 +152,7 @@
     padding: 10px 10px;
     margin-top: 10px;
     margin-left: 40px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .shop .container .right_box .product_box .product_container .box .img_box .icon li
 {
@@ -163,7 +163,7 @@
     color: grey;
     background: #fff;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .shop .container .right_box .product_box .product_container .box .img_box .icon li:hover
 {
@@ -205,7 +205,7 @@
     background: green;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .shop .container .right_box .product_box .product_container .box .detail button:hover
 {
@@ -242,11 +242,11 @@
 }
 .product_detail .container .img_box
 {
-    padding: 20px;
+    padding: 20px 20px;
     background: #f6f6f6;
     border-radius: 10px;
 }
-.product_detail .container .img_box .img_box
+.product_detail .container .img_box img
 {
     width: 270px;
     height: 270px;

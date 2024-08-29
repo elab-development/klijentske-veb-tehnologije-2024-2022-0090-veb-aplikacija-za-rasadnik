@@ -8,7 +8,7 @@ const Contact = () => {
             Name: '', Email: '', Subject: '', Message: ''
         }
     )
-        let values, names
+    let values, names
     const data = (e) =>
     {
         values = e.target.value 
@@ -49,10 +49,10 @@ const Contact = () => {
     <div className='contact'>
         <div className='container'>
             <div className='form'>
-                <h2>contact us</h2>
+                <h2>Contact us</h2>
                 <form method='POST'>
                     <div className='box'>
-                        <div className='label'>
+                        <div className='lable'>
                             <h4>                         
                                Name
                             </h4>
@@ -62,7 +62,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='box'>
-                        <div className='label'>
+                        <div className='lable'>
                             <h4>                         
                                E-mail
                             </h4>
@@ -72,7 +72,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='box'>
-                        <div className='label'>
+                        <div className='lable'>
                             <h4>                         
                                Subject
                             </h4>
@@ -82,7 +82,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='box'>
-                        <div className='label'>
+                        <div className='lable'>
                             <h4>                         
                                Message
                             </h4>
