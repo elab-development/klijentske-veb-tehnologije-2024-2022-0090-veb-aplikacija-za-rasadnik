@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './shop.css'
 import { AiFillHeart, AiFillEye, AiOutlineClose } from 'react-icons/ai';
-import { MdCrueltyFree } from 'react-icons/md'
-import { FiFilter } from 'react-icons/fi';
+//import { MdCrueltyFree } from 'react-icons/md'
+//import { FiFilter } from 'react-icons/fi';
 
 
 const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
@@ -15,11 +15,11 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
     {
         const detaildata =  ([{product}])
         const productdetail = detaildata[0]['product']
-        //console.log(productdetail)
+        console.log(productdetail)
         setDetail(productdetail)
         setShowDetail(true)
     }
-    console.log(productdetail)
+    //console.log(productdetail)
     const closedetail = () =>
     {
         setShowDetail(false)

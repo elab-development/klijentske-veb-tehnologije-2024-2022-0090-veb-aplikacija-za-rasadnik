@@ -1,0 +1,27 @@
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* zelena boja */
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .page-button:hover {
+    background-color: #FF5722; /* narandžasta boja */
+    transform: scale(1.05);
+  }
+  
+  .page-button.active {
+    background-color: #388E3C; /* tamnija zelena boja za aktivnu stranicu */
+  }
