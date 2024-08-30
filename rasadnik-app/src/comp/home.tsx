@@ -7,6 +7,7 @@ import { LuFacebook } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { PiTiktokLogo } from "react-icons/pi";
 import { AiFillEye, AiFillHeart, AiOutlineYoutube, AiOutlineShoppingCart } from "react-icons/ai";
+import Product from "./home_product";
 
 interface Product {
     images: string;
@@ -122,7 +123,6 @@ const Home: FC<HomeProps> = ({ addtocart }) => {
                                         <div className='info'>
                                             <h1>Stephan Robot</h1>
                                             <h4>Web designer</h4>
-                                            <p>DA NAPISEMO NEKI TEKST OVDE</p>
                                         </div>
                                     </div>
                                 </div>

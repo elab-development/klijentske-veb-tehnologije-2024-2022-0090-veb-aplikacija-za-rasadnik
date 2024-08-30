@@ -1,6 +1,8 @@
 import React, { useState, FC } from 'react';
 import './shop.css';
 import { AiFillHeart, AiFillEye, AiOutlineClose } from 'react-icons/ai';
+import React, { useState } from 'react';
+import { Product, ProductManager } from './classes/ProductManager';
 
 interface Product {
     images: string;
@@ -114,5 +116,31 @@ const Shop: FC<ShopProps> = ({ shop, Filter, allcatefilter, addtocart }) => {
         </>
     );
 };
+
+const Shop: React.FC = () => {
+    const initialProducts = [
+      new Product(1, 'Kaktus Grusoni S1', '10.000 RSD', 'images/img1.webp', 'Saksijsko cvece', 'new'),
+      // Ostali proizvodi...
+    ];
+  
+    const productManager = new ProductManager(initialProducts);
+  
+    const allProducts = productManager.getAllProducts();
+  
+    return (
+      <div>
+        <h1>Shop</h1>
+        <ul>
+          {allProducts.map(product => (
+            <li key={product.id}>
+              {product.name} - {product.price}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+  
+
 
 export default Shop;

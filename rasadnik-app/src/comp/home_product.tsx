@@ -7,6 +7,14 @@ interface Product{
     type: string;
 }
 
+interface Product {
+    id: number;
+    Name: string;
+    price: string;
+    images: string;
+    cat: string;
+    type: string;
+  }
 
 /*
 const Homeproduct: Array<{
@@ -125,22 +133,14 @@ const Homeproduct: Array<{
 ]
 export default Homeproduct
 */
-const Homeproduct: Array<{
-    id: number;
-    Name: string;
-    price: string;
-    images: string;
-    cat: string;
-    type: string;
-}> = 
-[
+const Homeproduct: Product[] = [
     {
-        id: 1,
-        Name: 'Kaktus Grusoni S1',
-        price: '10.000 RSD',
-        images: 'images/img1.webp',
-        cat: 'Saksijsko cvece',
-        type: 'new',
+      id: 1,
+      Name: 'Kaktus Grusoni S1',
+      price: '10.000 RSD',
+      images: 'images/img1.webp',
+      cat: 'Saksijsko cvece',
+      type: 'new',
     },
     {
         id: 2,
@@ -239,4 +239,4 @@ const Homeproduct: Array<{
         type: 'top',
     }
 ]
-export default Homeproduct
+export default Homeproduct;

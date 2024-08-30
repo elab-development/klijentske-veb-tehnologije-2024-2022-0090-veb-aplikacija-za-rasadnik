@@ -279,15 +279,7 @@
     font-weight: 300;
     text-transform: uppercase;
 }
-.home .trending .container .right_box .right_container .testmonial .detail .info p
-{
-    margin-top: 10px;
-    text-align: center;
-    font-weight: 600;
-    color: black;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
+
 .home .trending .container .right_box .right_container .newsletter
 {
     width: 100%;
