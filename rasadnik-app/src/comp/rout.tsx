@@ -5,7 +5,7 @@ import Shop from './shop';
 import Cart from './cart';
 import Contact from './contact';
 
-const Rout = ({shop, Filter, allcatefilter,addtocart, cart, setCart}) => {
+const Rout:  React.FC<any> = ({shop, Filter, allcatefilter,addtocart, cart, setCart}) => {
   return (
     <>
     <Routes>

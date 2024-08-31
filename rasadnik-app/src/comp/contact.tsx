@@ -9,14 +9,14 @@ const Contact = () => {
         }
     )
     let values, names
-    const data = (e) =>
+    const data = (e:any) =>
     {
         values = e.target.value 
         names = e.target.name 
         setUser({...user, [names]: values})
     }
 
-    const send = async (e) =>
+    const send = async (e:any) =>
     {
         const {Name, Email, Subject, Message} = user
         e.preventDefault()
@@ -58,7 +58,7 @@ const Contact = () => {
                             </h4>
                         </div>
                         <div className='input'>
-                            <intput type='text' placeholder='Name' value={user.Name} name='Name' onChange={data}></intput>
+                            <input type='text' placeholder='Name' value={user.Name} name='Name' onChange={data}></input>
                         </div>
                     </div>
                     <div className='box'>
@@ -68,7 +68,7 @@ const Contact = () => {
                             </h4>
                         </div>
                         <div className='input'>
-                            <intput type='email' placeholder='Email' value={user.Email} name='Email' onChange={data}></intput>
+                            <input type='email' placeholder='Email' value={user.Email} name='Email' onChange={data}></input>
                         </div>
                     </div>
                     <div className='box'>
@@ -78,7 +78,7 @@ const Contact = () => {
                             </h4>
                         </div>
                         <div className='input'>
-                            <intput type='text' placeholder='Subject' value={user.Subject} name='Subject' onChange={data}></intput>
+                            <input type='text' placeholder='Subject' value={user.Subject} name='Subject' onChange={data}></input>
                         </div>
                     </div>
                     <div className='box'>
@@ -91,7 +91,7 @@ const Contact = () => {
                             <textarea placeholder='Message !' value={user.Message} name='Message' onChange={data}></textarea>
                         </div>
                     </div>
-                    <button type='sublit' onClick={send}>Send</button>
+                    <button type='submit' onClick={send}>Send</button>
                 </form>
             </div>
         </div>
