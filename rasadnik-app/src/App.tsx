@@ -6,6 +6,7 @@ import Footer from './comp/footer';
 import Homeproduct from './comp/home_product';
 import ProductFilter from './comp/productFilter';
 import './pagination.css'
+import About from './comp/about';
 
 const App = () => {
   const [cart, setCart] = useState<any>([]);

@@ -1,0 +1,36 @@
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-us, .company-info, .mission-vision, .meet-the-team {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #2d6a4f; /* Tamno zelena boja za naslove */
+}
+
+.about-us p, .company-info p, .mission p, .vision p, .meet-the-team p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-us, .company-info, .mission-vision, .meet-the-team {
+    text-align: center;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mission, .vision {
+    flex: 1;
+}
+
+.company-info p {
+    max-width: 800px;
+    margin: 0 auto;
+}
