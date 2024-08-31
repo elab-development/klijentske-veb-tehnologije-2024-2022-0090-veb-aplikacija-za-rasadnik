@@ -34,9 +34,11 @@ h1, h2 {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .team-members {
+    margin-top: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
 }
 

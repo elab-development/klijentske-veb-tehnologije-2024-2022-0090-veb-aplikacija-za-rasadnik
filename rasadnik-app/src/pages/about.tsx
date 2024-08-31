@@ -1,6 +1,6 @@
 import React from 'react';
-import AboutPageInfo from './aboutPageInfo';
-import './about.css'
+import AboutPageInfo from '../models/aboutPageInfo';
+import '../styles/about.css'
 
 const About: React.FC = () => {
     return (

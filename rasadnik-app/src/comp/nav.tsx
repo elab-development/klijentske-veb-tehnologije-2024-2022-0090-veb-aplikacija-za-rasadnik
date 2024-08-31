@@ -6,7 +6,7 @@ import { CiLogout, CiUser } from 'react-icons/ci';
 import { useAuth0 } from "@auth0/auth0-react"; 
 import {Link} from 'react-router-dom';
 
-import './nav.css';
+import '../styles/nav.css';
 interface NavProps {
   search: string;
   setSearch: (value: string) => void;
@@ -33,7 +33,7 @@ const Nav: React.FC<NavProps> = ({ search, setSearch, searchproduct }) => {
         </div>
         <div className='mid_header'>
           <div className='logo'>
-            <img src='image/logo.png' alt='logo'></img>
+            <img src='./logo.png' alt='logo'></img>
           </div>
           <div className='search_box'>
             <input type='text' value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)}></input>

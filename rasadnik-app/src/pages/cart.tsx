@@ -1,5 +1,5 @@
 import React from 'react'
-import './cart.css'
+import '../styles/cart.css'
 import { Link } from 'react-router-dom'
 import { AiOutlineClose } from 'react-icons/ai'
 

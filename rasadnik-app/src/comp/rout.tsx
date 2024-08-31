@@ -1,10 +1,10 @@
 import React from 'react'
 import { Routes, Route} from 'react-router';
-import Home from './home';
-import Shop from './shop';
-import Cart from './cart';
-import Contact from './contact';
-import About from './about';
+import Home from '../pages/home';
+import Shop from '../pages/shop';
+import Cart from '../pages/cart';
+import Contact from '../pages/contact';
+import About from '../pages/about';
 
 const Rout:  React.FC<any> = ({shop, Filter, allcatefilter,addtocart, cart, setCart}) => {
   return (

@@ -4,9 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import Rout from './comp/rout';
 import Footer from './comp/footer';
 import Homeproduct from './comp/home_product';
-import ProductFilter from './comp/productFilter';
+import ProductFilter from './models/productFilter';
 import './pagination.css'
-import About from './comp/about';
+import About from './pages/about';
 
 const App = () => {
   const [cart, setCart] = useState<any>([]);

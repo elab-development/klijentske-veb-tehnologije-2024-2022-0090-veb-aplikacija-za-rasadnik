@@ -45,6 +45,8 @@
 {
     cursor: pointer;
     object-fit: cover;
+    width: 60px; /* Postavite željenu širinu */
+    height: auto
 }
 .header .mid_header .search_box input
 {

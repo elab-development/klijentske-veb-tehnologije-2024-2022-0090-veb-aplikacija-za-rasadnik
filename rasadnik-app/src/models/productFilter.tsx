@@ -1,4 +1,4 @@
-import './productFilter.css'
+import '../styles/productFilter.css'
 class ProductFilter {
   products:any;
     constructor(products:any) {

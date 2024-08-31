@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './shop.css'
+import '../styles/shop.css'
 import { AiFillHeart, AiFillEye, AiOutlineClose } from 'react-icons/ai';
 //import { MdCrueltyFree } from 'react-icons/md'
 //import { FiFilter } from 'react-icons/fi';
