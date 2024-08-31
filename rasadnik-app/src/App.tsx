@@ -8,6 +8,7 @@ import ProductFilter from './models/productFilter';
 import './styles/pagination.css'
 import About from './pages/about';
 import './styles/productDisplay.css'
+import TestComponent from './comp/testComponent';
 
 const App = () => {
   const [cart, setCart] = useState<any>([]);
@@ -174,7 +175,11 @@ const App = () => {
              </div>
           </div>
         <Footer />
-        
+        <TestComponent
+        onClick={() =>{
+          console.log('Test radi!');
+        }}
+        />
       </BrowserRouter>
     </>
   );
