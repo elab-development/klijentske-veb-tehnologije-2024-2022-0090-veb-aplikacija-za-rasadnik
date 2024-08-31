@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/footer.css'
 import { FaHeadphonesAlt, FaPiggyBank, FaShippingFast, FaWallet } from 'react-icons/fa';
 
+
 const Footer = () => {
   return (
     <>

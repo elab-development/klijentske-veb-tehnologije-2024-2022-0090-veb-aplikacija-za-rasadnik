@@ -4,6 +4,7 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    
 }
 .home
 {
@@ -111,6 +112,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 .home .trending .container .left_box .products button
 {
@@ -126,15 +129,27 @@
     cursor: pointer;
 }
 .home .trending .container .left_box .products .container .box 
-{
-    width: 195px;
-    height: 295px;
-   /* padding: 10px 10px;*/
+{/*
+    width: 205px;
+    height: 295;
+    padding: 10px 10px;
     border: 4px solid #f6f7f8;
     margin-top: 20px;
     margin-left: 20px;
     overflow: hidden;
     border-radius: 5px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+
+    width: calc(25% - 30px); /* Četiri proizvoda po redu, uzimajući u obzir razmake */
+    height: 320px; /* Povećana visina */
+    padding: 10px;
+    border: 4px solid #f6f7f8;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #ffffff; /* Pozadinska boja proizvoda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .home .trending .container .left_box .products .container .box .img_box
@@ -144,10 +159,13 @@
 
 .home .trending .container .left_box .products .container .box .img_box img
 {
-    width: 190px;
-    height: 190px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
+
+
 .home .trending .container .left_box .products .container .box .img_box .icon
 {
     display: flex;
@@ -164,8 +182,9 @@
 }
 .home .trending .container .left_box .products .container .box .img_box .icon .icon_box
 {
-    padding: 10px 10px;
+    padding: 20px 20px;
     margin-top: 10px;
+    margin-left: 15px;
     box-shadow: rgb(216, 216, 214) 0px 3px 8px;
     z-index: 1;
     background: rgb(245, 243, 243);

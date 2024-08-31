@@ -5,9 +5,9 @@ import Rout from './comp/rout';
 import Footer from './comp/footer';
 import Homeproduct from './comp/home_product';
 import ProductFilter from './models/productFilter';
-import './pagination.css'
+import './styles/pagination.css'
 import About from './pages/about';
-import './productDisplay.css'
+import './styles/productDisplay.css'
 
 const App = () => {
   const [cart, setCart] = useState<any>([]);
@@ -102,6 +102,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Nav search={search} setSearch={setSearch} searchproduct={searchproduct} />
+       
         <Rout setCart={setCart} cart={cart} shop={shop} Filter={Filter} allcatefilter={allcatefilter} addtocart={addtocart} />
         <div className="filter-section">
           <h3>Filteri:</h3>
@@ -173,6 +174,7 @@ const App = () => {
              </div>
           </div>
         <Footer />
+        
       </BrowserRouter>
     </>
   );
