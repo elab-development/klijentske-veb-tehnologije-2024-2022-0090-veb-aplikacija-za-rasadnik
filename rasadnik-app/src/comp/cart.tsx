@@ -3,49 +3,49 @@ import './cart.css'
 import { Link } from 'react-router-dom'
 import { AiOutlineClose } from 'react-icons/ai'
 
-const Cart = ({cart,setCart}) => {
+const Cart = ({cart,setCart}:any) => {
 
     //Increase Quantity of cart product
-    const incqty = (product) =>
+    const incqty = (product:any) =>
     {
-        const exist = cart.find((x) =>
+        const exist = cart.find((x:any) =>
         {
             return x.id === product.id
         })
-        setCart(cart.map((curElm) =>
+        setCart(cart.map((curElm:any) =>
         {
             return curElm.id === product.id ? {...exist, qty: exist.qty + 1} : curElm
         }))
     }
     //Decrease Quantity of cart product
-    const decqty = (product) =>
+    const decqty = (product:any) =>
     {
-        const exist = cart.find((x) =>
+        const exist = cart.find((x:any) =>
         {
             return x.id === product.id
         })
-        setCart(cart.map((curElm) =>
+        setCart(cart.map((curElm:any) =>
         {
             return curElm.id === product.id ? {...exist, qty: exist.qty - 1} : curElm
         }))
     }
     //Removing cart product
-    const removeproduct = (product) =>
+    const removeproduct = (product:any) =>
     {
-        const exist = cart.find((x) =>
+        const exist = cart.find((x:any) =>
         {
             return x.id === product.id
         })
         if(exist.qty > 0)
         {
-          setCart(cart.filter((curElm) =>
+          setCart(cart.filter((curElm:any) =>
         {
             return curElm.id !== product.id
         }))
         }
     }
     //Total price
-    const total = cart.reduce((price, item) => price + item.qty * item.price, 0)
+    const total = cart.reduce((price:number, item:any) => price + item.qty * item.price, 0)
   return (
     <>
     <div className='cart'>
@@ -62,7 +62,7 @@ const Cart = ({cart,setCart}) => {
         }
         <div className='container'>
             {
-                cart.map((curElm) =>
+                cart.map((curElm:any) =>
                 {
                     return(
                         <>
