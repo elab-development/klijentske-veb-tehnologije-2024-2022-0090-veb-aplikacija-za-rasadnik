@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutPageInfo from './aboutPageInfo';
 import './about.css'
+
 const About: React.FC = () => {
     return (
         <div className="about-container">
@@ -25,6 +26,21 @@ const About: React.FC = () => {
             <section className="meet-the-team">
                 <h2>Upoznajte Tim</h2>
                 <p>Naš tim se sastoji od iskusnih i posvećenih profesionalaca koji su uložili mnogo truda i strasti u ono što rade. Svaki član tima doprinosi svom specijalizacijom znanju kako bi našim kupcima pružio najbolju moguću uslugu.</p>
+
+                <div className="team-members">
+                    <div className="team-member">
+                        <img src="./images/teammember1.jpg" alt="Član 1" />
+                        <p>Danijel Stojanović</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="./images/teammember2.jpg" alt="Član 2" />
+                        <p>Adrijana Popović</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="./images/teammember3.jpg" alt="Član 3" />
+                        <p>Dora Vlahović</p>
+                    </div>
+                </div>
             </section>
         </div>
     );
