@@ -2,14 +2,14 @@
 .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   .page-button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50; /* zelena boja */
+    background-color: #146417; /* zelena boja */
     color: #fff;
     font-size: 1em;
     cursor: pointer;
@@ -18,7 +18,7 @@
   }
   
   .page-button:hover {
-    background-color: #FF5722; /* narandžasta boja */
+    background-color: #cb4015; /* narandžasta boja */
     transform: scale(1.05);
   }
   

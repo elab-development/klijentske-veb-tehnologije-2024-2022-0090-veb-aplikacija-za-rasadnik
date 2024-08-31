@@ -7,6 +7,7 @@ import Homeproduct from './comp/home_product';
 import ProductFilter from './models/productFilter';
 import './pagination.css'
 import About from './pages/about';
+import './productDisplay.css'
 
 const App = () => {
   const [cart, setCart] = useState<any>([]);
@@ -18,7 +19,7 @@ const App = () => {
   const [maxPrice, setMaxPrice] = useState('');
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(3);
+  const [productsPerPage] = useState(8);
 
   const Filter = (x:string) => {
     const cateFilter = Homeproduct.filter((product) => product.cat === x);
@@ -146,30 +147,31 @@ const App = () => {
           </div>
         </div>
         <div>
-          <h2>Proizvodi:</h2>
-          <ul>
-            {currentProducts.map(product => (
-              <li key={product.id} className="product-item">
+        <h2 className="products-header">Proizvodi:</h2>
+        <div className="products-container">
+          {currentProducts.map(product => (
+             <div key={product.id} className="product-item">
                 <img src={product.images} alt={product.Name} />
-                <div>
-                  <h4>{product.Name}</h4>
-                  <p>{product.price}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <div className="pagination">
-            {Array.from({ length: totalPages }, (_, index) => (
-              <button
+                  <div>
+                     <h4>{product.Name}</h4>
+                     <p>{product.price}</p>
+                 </div>
+            </div>
+         ))}
+        </div>
+
+         <div className="pagination">
+           {Array.from({ length: totalPages }, (_, index) => (
+            <button
                 key={index + 1}
                 className={`page-button ${currentPage === index + 1 ? 'active' : ''}`}
                 onClick={() => handlePageChange(index + 1)}
-              >
+            >
                 {index + 1}
-              </button>
+            </button>
             ))}
+             </div>
           </div>
-        </div>
         <Footer />
       </BrowserRouter>
     </>

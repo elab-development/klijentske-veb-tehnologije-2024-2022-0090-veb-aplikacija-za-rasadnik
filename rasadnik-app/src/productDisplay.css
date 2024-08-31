@@ -1,0 +1,129 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolone */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-item {
+    list-style-type: none;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h4 {
+    color: #2d6a4f; /* Tamno zelena boja za naziv proizvoda */
+}
+
+.product-item p {
+    color: #555;
+    font-weight: bold;
+}
+
+.product-item img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone */
+    gap: 20px; /* razmak između proizvoda */
+    justify-items: center; /* centriraj proizvode horizontalno */
+}
+
+.product-item {
+    background-color: #f9f9f9; /* svetla pozadina za proizvod */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* centriraj tekst unutar proizvoda */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+Copy code
+.proizvodi-header {
+  text-align: center;
+  font-size: 2em;
+  color: #388E3C; /* tamnozelena boja */
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.product-item {
+  background-color: #f0f0f0; /* svetlosiva boja */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.product-item img:hover{
+    transform: scale(1.1);
+}
+.product-item h4 {
+  color: #0b580e; /* zelena boja */
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  font-size: 1.2em;
+  color: #0a1c03;
+}
+.products-header {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #0d400e; /* zelena boja */
+    margin-bottom: 35px;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+/*
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+*/
+.product-item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Smanjeno zbog razmaka */
+    box-sizing: border-box;
+    text-align: center;
+}
