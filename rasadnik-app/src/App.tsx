@@ -8,7 +8,7 @@ import ProductFilter from './comp/productFilter';
 import './pagination.css'
 
 const App = () => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<any>([]);
   const [shop, setShop] = useState(Homeproduct);
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('');
@@ -19,7 +19,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(3);
 
-  const Filter = (x) => {
+  const Filter = (x:string) => {
     const cateFilter = Homeproduct.filter((product) => product.cat === x);
     setShop(cateFilter);
   };
@@ -39,8 +39,8 @@ const App = () => {
     }
   };
 
-  const addtocart = (product) => {
-    const exist = cart.find((x) => x.id === product.id);
+  const addtocart = (product: any) => {
+    const exist = cart.find((x:any) => x.id === product.id);
     if (exist) {
       alert("This product is already added in cart");
     } else {
@@ -52,17 +52,17 @@ const App = () => {
   const [filteredProducts, setFilteredProducts] = useState(Homeproduct);
   const productFilter = new ProductFilter(Homeproduct);
 
-  const filterByCategory = (category) => {
+  const filterByCategory = (category:string) => {
     const filtered = productFilter.filterByCategory(category);
     setFilteredProducts(filtered);
   };
 
-  const filterByType = (type) => {
+  const filterByType = (type:string) => {
     const filtered = productFilter.filterByType(type);
     setFilteredProducts(filtered);
   };
 
-  const filterByPriceRange = (minPrice, maxPrice) => {
+  const filterByPriceRange = (minPrice: number, maxPrice: number) => {
     const filtered = productFilter.filterByPriceRange(minPrice, maxPrice);
     setFilteredProducts(filtered);
   };
@@ -81,12 +81,13 @@ const App = () => {
     filterByPriceRange(parseFloat(minPrice) || 0, parseFloat(maxPrice) || Infinity);
   };
 
-  const handlePageChange = (pageNumber) => {
+  const handlePageChange = (pageNumber:number ) => {
     setCurrentPage(pageNumber);
   };
-
-  const categories = [...new Set(Homeproduct.map(product => product.cat))];
-  const types = [...new Set(Homeproduct.map(product => product.type))];
+  const productSet = new Set(Homeproduct.map(product => product.cat));
+  const typeSet = new Set(Homeproduct.map(product => product.type));
+  const categories: any[] = [...productSet];
+  const types: any[] = [...typeSet];
 
   // Calculate the index of the first product on the current page
   const indexOfLastProduct = currentPage * productsPerPage;
