@@ -106,21 +106,7 @@ const Home: React.FC<HomeProps> = ({ addtocart }) => {
                 </div>
                 <div className='right_box'>
                     <div className='right_container'>
-                        <div className='testmonial'>
-                            <div className='head'>
-                                <h3>Our testmonial</h3>
-                            </div>
-                            <div className='detail'>
-                                <div className='img_box'>
-                                    <img src='images/about-img.webp' alt='testmonial'></img>
-                                </div>
-                                <div className='info'>
-                                    <h1>Stephan Robot</h1>
-                                    <h4>Web designer</h4>
-                                    <p>DA NAPISEMO NEKI TEKST OVDE</p>
-                                </div>
-                            </div>
-                        </div>
+                      
                         <div className='newsletter'>
                             <div className='head'>
                                 <h3>Newsletter</h3>
@@ -148,27 +134,7 @@ const Home: React.FC<HomeProps> = ({ addtocart }) => {
                 </div>
             </div>
         </div>  
-        <div className='banners'>
-            <div className='container'>
-                <div className='left_box'>
-                    <div className='box'>
-                        <img src='images/img10.webp' alt='banner'></img>
-                    </div>
-                    <div className='box'>
-                        <img src='images/img11.webp' alt='banner'></img>
-                    </div>
-                </div>
-                <div className='right_box'>
-                    <div className='top'>
-                        <img src='images/img12.webp' alt=''></img>
-                        <img src='images/img13.webp' alt=''></img>
-                    </div>
-                    <div className='bottom'>
-                        <img src='images/img9.webp' alt=''></img>
-                    </div>
-                </div>
-            </div>
-        </div>
+
            <div className='product_type'>
                 <div className='container'>
                     <div className='box'>

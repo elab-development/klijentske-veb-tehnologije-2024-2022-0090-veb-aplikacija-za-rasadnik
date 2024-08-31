@@ -69,12 +69,12 @@ interface Product {
                   <div className='box'>
                     <ul>
                       <li onClick={() => allcatefilter()}># All</li>
-                      <li onClick={() => Filter("Saksijsko cveće")}># Saksijsko cveće</li>
+                      <li onClick={() => Filter("Saksijsko cvece")}># Saksijsko cveće</li>
                       <li onClick={() => Filter("Žive ograde")}># Žive ograde</li>
                       <li onClick={() => Filter("Ruže")}># Ruže</li>
                       <li onClick={() => Filter("Drveće")}># Drveće</li>
                       <li onClick={() => Filter("Čuvarkuće")}># Čuvarkuće</li>
-                      <li onClick={() => Filter("Četinari")}># Četinari</li>
+                      <li onClick={() => Filter("Zamia")}># Zamia</li>
                     </ul>
                   </div>
                 </div>
