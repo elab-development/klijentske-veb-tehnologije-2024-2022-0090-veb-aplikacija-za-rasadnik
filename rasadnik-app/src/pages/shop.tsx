@@ -70,8 +70,8 @@ interface Product {
                     <ul>
                       <li onClick={() => allcatefilter()}># All</li>
                       <li onClick={() => Filter("Saksijsko cvece")}># Saksijsko cveće</li>
-                      <li onClick={() => Filter("Žive ograde")}># Žive ograde</li>
-                      <li onClick={() => Filter("Ruže")}># Ruže</li>
+                      <li onClick={() => Filter("Rezano cveće")}># Rezano cveće</li>
+                      <li onClick={() => Filter("Kaktusi")}># Kaktusi</li>
                       <li onClick={() => Filter("Drveće")}># Drveće</li>
                       <li onClick={() => Filter("Čuvarkuće")}># Čuvarkuće</li>
                       <li onClick={() => Filter("Zamia")}># Zamia</li>

@@ -15,7 +15,7 @@ const Footer = () => {
                     </div>
                     <div className='detail'>
                         <h3>Great Saving</h3>
-                        <p>Lorem ipsum dolor dit amet,</p>
+                        <p>Najpovoljnije cene</p>
                     </div>
                 </div>
                 <div className='box'>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                     <div className='detail'>
                         <h3>free delivery</h3>
-                        <p>Lorem ipsum dolor dit amet,</p>
+                        <p>Besplatna dostava za porudžbinu preko 8000 RSD</p>
                     </div>
                 </div>
                 <div className='box'>
@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div className='detail'>
                         <h3>24/7 support</h3>
-                        <p>Lorem ipsum dolor dit amet,</p>
+                        <p>Za sva dodatna pitanja naš tim je dostupan 24/7</p>
                     </div>
                 </div>
                 <div className='box'>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                     <div className='detail'>
                         <h3>money back</h3>
-                        <p>Lorem ipsum dolor dit amet,</p>
+                        <p>Povraćaj novca u roku od 14 dana</p>
                     </div>
                 </div>
             </div>

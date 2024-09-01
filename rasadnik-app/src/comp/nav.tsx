@@ -28,7 +28,7 @@ const Nav: React.FC<NavProps> = ({ search, setSearch, searchproduct }) => {
             <MdLocalShipping />
           </div>
           <div className='info'>
-            <p>Free Shipping When Shopping upto $1000</p>
+            <p>Besplatna dostava preko 8000 RSD</p>
           </div>
         </div>
         <div className='mid_header'>

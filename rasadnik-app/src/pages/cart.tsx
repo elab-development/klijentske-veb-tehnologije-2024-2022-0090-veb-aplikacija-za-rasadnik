@@ -68,7 +68,7 @@ const Cart = ({cart,setCart}:any) => {
                         <>
                         <div className='box'>
                             <div className='img_box'>
-                                <img src={curElm.image} alt=''></img>
+                                <img src={curElm.images} alt=''></img>
                             </div>
                             <div className='detail'>
                                 <div className='info'>
@@ -94,7 +94,7 @@ const Cart = ({cart,setCart}:any) => {
         </div>
         <div className='bottom'>
             {
-                cart.lenght >0 &&
+                cart.length >0 &&
                 <>
                 <div className='Total'>
                     <h4>Sub Total: {total} RSD</h4>
