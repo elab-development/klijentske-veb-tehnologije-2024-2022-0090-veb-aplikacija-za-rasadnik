@@ -8,7 +8,7 @@ import ProductFilter from './models/productFilter';
 import './styles/pagination.css'
 import About from './pages/about';
 import './styles/productDisplay.css'
-import TestComponent from './test/TestComponent';
+import TestComponent from './test/TestComponent.test';
 
 const App = () => {
   const [cart, setCart] = useState<any>([]);
